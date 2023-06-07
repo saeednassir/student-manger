@@ -55,6 +55,7 @@ class Student
     {
         if ($course instanceof \Course\Course) {
             array_push($this->courses, $course);
+            echo "\nAdded Course By Name \"{$course->name}\" To Student \"{$this->getName()}\"!\n";
         } else {
             echo 'Warning : Please enter object from class Course!';
         }

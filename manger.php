@@ -22,7 +22,8 @@ class Manger
         if ($student instanceof \Student\Student) {
             $id = $student->getId();
             $this->students[$id] = $student;
-            $this->log("Added   student By id: {$id} and name: {$student->getName()}");
+            echo "\nAdded Successfully By Id \"{$id}\" !\n";
+            $this->log("Added   student By id: \"{$id}\" and name: \"{$student->getName()}\"");
         }
     }
 
@@ -41,6 +42,7 @@ class Manger
             $student = $this->students[$id];
             $student->setName($name);
             $student->setEmail($email);
+            echo "Updated Successfully By Id {$id} !\n";
             $this->log("Updated student By id: {$id} and name: {$student->getName()}");
         }else {
             return "Not Found Student By Id {$id}!";
