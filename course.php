@@ -4,8 +4,8 @@ namespace Course;
 
 class Course{
 
-    public readonly int $id;
-    public string $name;
+    private readonly int $id;
+    private string $name;
 
     public function __construct($id, $name)
     {
