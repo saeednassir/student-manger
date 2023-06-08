@@ -7,10 +7,10 @@ require_once __DIR__ . '/course.php';
 class Student
 {
 
-    public readonly int $id;
-    public string $name;
-    public string $email;
-    public $courses;
+    private readonly int $id;
+    private string $name;
+    private string $email;
+    private $courses;
 
     public function __construct($id, $name, $email)
     {
